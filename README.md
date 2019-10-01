@@ -2,11 +2,13 @@ Tripel is a 15x4+1x5 key ortholinear keyboard PCB.
 
 The goal of this project is to build a pro-micro powered ortholinear PCB that fits in a standard 60%   tray mount case but built from sub-100x100mm PCB boards.
 
+![PCB render](pcb-render.png)
+
 * Designed to be easy to build with minimal soldering experience.
 * Built from 3 of the same PCB.
 * 7u spacebar bottom row.
 
-![PCB render](tripel.png)
+![PCB render](3pcbs.jpg)
 
 # Bill of Materials (BOM)
 
@@ -20,6 +22,8 @@ The goal of this project is to build a pro-micro powered ortholinear PCB that fi
 # Ordering PCBs
 
 PCBs can be manufactuered by a variety of online PCB fabricators. You can use [PCBShopper](https://pcbshopper.com/) to search for the best price.
+
+![PCBs](pcb.jpg)
 
 The zip file in the gerber directory contains the gerber files your fabricator will need to make the PCB [tripel.zip](https://github.com/peej/tripel-keyboard/blob/master/gerber/tripel.zip) PCB.
 
