@@ -292,7 +292,7 @@ Connection ~ 6750 4600
 Wire Wire Line
 	7350 3500 7350 4300
 Wire Wire Line
-	8300 3500 8300 4300
+	8300 3500 8300 4050
 $Comp
 L promicro:ProMicro_ChipSideDown U1
 U 1 1 5D57104B
@@ -841,7 +841,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 4300 6400 5100
 Wire Wire Line
-	8300 4300 8300 5100
+	8300 4300 8300 4850
 $Comp
 L Connector_Generic:Conn_01x08 J1
 U 1 1 5D95BB78
@@ -886,9 +886,9 @@ Connection ~ 9250 5100
 Wire Wire Line
 	9250 5100 9250 6100
 Wire Wire Line
-	7700 4600 9550 4600
+	7700 4600 8650 4600
 Wire Wire Line
-	9250 3500 9250 4850
+	9250 3500 9250 4050
 Connection ~ 8650 5100
 Connection ~ 9250 4850
 Wire Wire Line
@@ -930,4 +930,83 @@ Wire Wire Line
 	8600 1400 8950 1400
 Wire Wire Line
 	8950 1400 8950 1300
+$Comp
+L keyboard_parts:KEYSW K5.5
+U 1 1 5D9A2ED6
+P 8000 4050
+F 0 "K5.5" H 7950 4050 60  0000 C CNN
+F 1 "KEYSW" H 8000 3950 60  0001 C CNN
+F 2 "keyboard:MX_DOUBLESIDED" H 8000 4050 60  0001 C CNN
+F 3 "" H 8000 4050 60  0000 C CNN
+	1    8000 4050
+	1    0    0    -1  
+$EndComp
+Connection ~ 8300 4050
+Wire Wire Line
+	8300 4050 8300 4300
+Wire Wire Line
+	7700 4050 7700 4300
+Connection ~ 7700 4300
+$Comp
+L Device:D D20
+U 1 1 5D9A7D9F
+P 8650 4450
+F 0 "D20" H 8650 4550 50  0000 C CNN
+F 1 "D" H 8650 4350 50  0000 C CNN
+F 2 "keyboard:DIODE" H 8650 4450 50  0001 C CNN
+F 3 "" H 8650 4450 50  0000 C CNN
+	1    8650 4450
+	0    -1   -1   0   
+$EndComp
+Connection ~ 8650 4600
+Wire Wire Line
+	8650 4600 9550 4600
+$Comp
+L keyboard_parts:KEYSW K5.8
+U 1 1 5D9A855E
+P 8950 4300
+F 0 "K5.8" H 8900 4300 60  0000 C CNN
+F 1 "KEYSW" H 8950 4200 60  0001 C CNN
+F 2 "keyboard:MX_DOUBLESIDED" H 8950 4300 60  0001 C CNN
+F 3 "" H 8950 4300 60  0000 C CNN
+	1    8950 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 9250 4300
+Wire Wire Line
+	9250 4300 9250 4850
+$Comp
+L keyboard_parts:KEYSW K5.7
+U 1 1 5D9A8A71
+P 8950 4050
+F 0 "K5.7" H 8900 4050 60  0000 C CNN
+F 1 "KEYSW" H 8950 3950 60  0001 C CNN
+F 2 "keyboard:MX_DOUBLESIDED" H 8950 4050 60  0001 C CNN
+F 3 "" H 8950 4050 60  0000 C CNN
+	1    8950 4050
+	1    0    0    -1  
+$EndComp
+Connection ~ 9250 4050
+Wire Wire Line
+	9250 4050 9250 4300
+Wire Wire Line
+	8650 4050 8650 4300
+Connection ~ 8650 4300
+$Comp
+L keyboard_parts:KEYSW K5.6
+U 1 1 5D9ADA77
+P 8000 4850
+F 0 "K5.6" H 7950 4850 60  0000 C CNN
+F 1 "KEYSW" H 8000 4750 60  0001 C CNN
+F 2 "keyboard:MX_DOUBLESIDED" H 8000 4850 60  0001 C CNN
+F 3 "" H 8000 4850 60  0000 C CNN
+	1    8000 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 8300 4850
+Wire Wire Line
+	8300 4850 8300 5100
+Wire Wire Line
+	7700 4850 7700 5100
+Connection ~ 7700 5100
 $EndSCHEMATC

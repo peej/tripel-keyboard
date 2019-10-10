@@ -42,6 +42,7 @@ When uploading the gerber zip files, use the default PCB settings.
 * Solder on the Pro Micro headers onto the underside of the middle PCB.
   * Do not solder on the Pro Micro yet.
   * Instead of using the Pro Micro headers, you can use the trimmed diode wires instead.
+* Solder on the USB connector.
 * Insert the switches into the plate.
 * Put the stabilizer together and fit it into the left and right PCBs.
   * If you forget the stabilizer you will need to unsolder all of the switches so as to fit it.
@@ -57,6 +58,5 @@ When uploading the gerber zip files, use the default PCB settings.
   * Ensure that you have it the correct way around, the chip side should be face down towards the PCB with the USB port to the right.
   * You might want to remove the plastic from the header pins so that the Pro Micro can be mounted as close to the PCB as possible.
   * Use electrical tape underneath the Pro Micro if you think shorting against the switch pins could be an issue.
-* Solder on the USB connector.
 * Cut your USB cable to length and solder the wires to the pins for the USB connector.
 * Flash the Pro Micro with the firmware, see the [QMK documentation](http://qmk.fm/) on how to build and flash the firmware.
