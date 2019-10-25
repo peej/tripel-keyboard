@@ -36,14 +36,16 @@ When uploading the gerber zip files, use the default PCB settings.
 # Construction
 
 * You will need 3 PCBs.
+  * Cut off the USB stickout from the center and right PCBs with a hacksaw.
 * Solder the diodes onto each PCB.
   * You can place them on either side, but remember that the right most PCB will be flipped.
   * The end of the diode with black band goes in the square hole.
 * Solder on the Pro Micro headers onto the underside of the middle PCB.
   * Do not solder on the Pro Micro yet.
-  * Instead of using the Pro Micro headers, you can use the trimmed diode wires instead.
-* Solder on the USB connector.
+  * To get keep the headers straight while soldering, place the Pro Micro over the headers to hold them in place.
+* Solder on the USB connector to the underside of the left PCB.
 * Insert the switches into the plate.
+  * If using a XD75 ortholinear plate, you will need to modify the bottom row to allow the placing of the 1.5u modifier keys.
 * Put the stabilizer together and fit it into the left and right PCBs.
   * If you forget the stabilizer you will need to unsolder all of the switches so as to fit it.
   * Don't forget to trim and lube your stabilizer before fitting if you want to.
