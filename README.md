@@ -53,12 +53,14 @@ When uploading the gerber zip files, use the default PCB settings.
   * The PCBs should be placed the way around as indicated by the soldermask.
   * Insert all the switches and ensure that the pins of each switch are correctly coming through the board and are not bent under the PCB.
 * Solder all the switch pins.
+  * Some switches might foul on your case mounting posts stopping the PCB from sitting flush, before soldering, trim the switch pins which would foul so they are flush with the PCB.
+  * The switch next to the Pro Micro might need to have it's pins trimmed so that your USB cable can plug in and sit as flush as possible to the PCB.
 * Solder the solder bridges between the PCBs:
   * Solder both of the 3 pad and 8 pad bridges on the back of the PCBs.
   * Bridges on the front of the PCB are no longer accessable due to the plate and do not need to be soldered.
 * Solder on the Pro Micro:
   * Ensure that you have it the correct way around, the chip side should be face down towards the PCB with the USB port to the right.
-  * You might want to remove the plastic from the header pins so that the Pro Micro can be mounted as close to the PCB as possible.
+  * You might want to plug in your USB cable while soldering so that the Pro Micro is mounted far enough from the PCB for the cable to plug in successfully.
   * Use electrical tape underneath the Pro Micro if you think shorting against the switch pins could be an issue.
 * Cut your USB cable to length and solder the wires to the pins for the USB connector.
 * Flash the Pro Micro with the firmware, see the [QMK documentation](http://qmk.fm/) on how to build and flash the firmware.
