@@ -4,13 +4,14 @@ Tripel is a 15x4+1x5 key ortholinear keyboard PCB.
 
 The goal of this project is to build a pro-micro powered ortholinear PCB that fits in a standard 60% tray mount case but built from sub-100x100mm PCB boards.
 
-![PCB render](pcb-render.png)
+![PCB render](images/pcb-render.png)
 
 * Designed to be easy to build with minimal soldering experience.
 * Built from 3 of the same PCB.
 * 7u spacebar bottom row.
 
-![PCB render](3pcbs.jpg)
+![PCB render](images/layout.png)
+![PCB render](images/3pcbs.jpg)
 
 # Bill of Materials (BOM)
 
@@ -27,7 +28,7 @@ The goal of this project is to build a pro-micro powered ortholinear PCB that fi
 
 PCBs can be manufactuered by a variety of online PCB fabricators. You can use [PCBShopper](https://pcbshopper.com/) to search for the best price. Many manufacturers have special rates for prototype boards under 100x100mm in size.
 
-![PCBs](pcb.jpg)
+![PCBs](images/pcb.jpg)
 
 The zip file in the gerber directory contains the gerber files your fabricator will need to make the PCB [tripel.zip](https://github.com/peej/tripel-keyboard/blob/master/gerber/tripel.zip) PCB.
 
@@ -65,4 +66,13 @@ When uploading the gerber zip files, use the default PCB settings.
   * You might want to plug in your USB cable while soldering so that the Pro Micro is mounted far enough from the PCB for the cable to plug in successfully.
   * Use electrical tape underneath the Pro Micro if you think shorting against the switch pins could be an issue.
 * Cut your USB cable to length and solder the wires to the pins for the USB connector.
-* Flash the Pro Micro with the firmware, see the [QMK documentation](http://qmk.fm/) on how to build and flash the firmware.
+
+# Firmware
+
+Build and flash the Pro Micro with QMK firmware, see the [QMK documentation](http://qmk.fm/) on how to do this.
+
+The required pinout for the firmware is shown in the following image:
+
+![PCB render](images/pins.png)
+
+A preconfigured firmware is not yet available in the QMK repo.
