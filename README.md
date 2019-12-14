@@ -65,7 +65,8 @@ When uploading the gerber zip files, use the default PCB settings.
   * Ensure that you have it the correct way around, the chip side should be face down towards the PCB with the USB port to the right.
   * You might want to plug in your USB cable while soldering so that the Pro Micro is mounted far enough from the PCB for the cable to plug in successfully.
   * Use electrical tape underneath the Pro Micro if you think shorting against the switch pins could be an issue.
-* Cut your USB cable to length and solder the wires to the pins for the USB connector.
+* Cut your USB cable to length and solder the wires to the pads for the USB connector.
+ * Wire colours may vary, but usually: Red = VCC; black = GND; white = D+; green = D-
 
 # Firmware
 
