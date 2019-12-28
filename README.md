@@ -37,23 +37,23 @@ When uploading the gerber zip files, use the default PCB settings.
 # Construction
 
 * You will need 3 PCBs.
-  * Cut off the USB stickout from the center and right PCBs with a hacksaw.
 * Solder the diodes onto each PCB.
   * You can place them on either side, but the drawing on the soldermask is on the front of the PCB.
+  * The diodes under the Pro Micro must go on the front side of the PCB.
   * The end of the diode with black band goes in the square hole.
-* Solder on the Pro Micro headers onto the underside of the middle PCB.
+* Solder on the Pro Micro headers onto the underside of one PCB.
   * Do not solder on the Pro Micro yet.
+  * You can place the Pro Micro on any of the 3 PCBs, pick the placement that works best for your case.
   * To get keep the headers straight while soldering, place the Pro Micro over the headers to hold them in place.
   * If you want to use a socket for your Pro Micro, solder on a socket instead.
 * Solder on the USB connector to the underside of the left PCB.
 * Insert the switches into the plate.
-  * If using a XD75 ortholinear plate, you will need to modify it if you are using the 1.5u bottom row layout.
+  * If using a XD75 ortholinear plate, you will need to modify it if you are using an incompatible layout.
 * Join the PCBs together by solder the solder bridges between the PCBs.
-  * Solder the top right 3 pad bridge to the right PCB as indicated by the soldermask.
-  * Solder the middle left 3 pad bridge to the left PCB as indicated by the soldermask.
-  * Solder both 8 pad bridges.
+  * Solder all pad bridges between the 3 PCBs.
   * Use small bent pieces of trimmed diode wire to bridge the solder bridges instead of just using solder.
-* Put the stabilizer together and fit it into the left and right PCBs.
+* Put the 7u stabilizer together and fit it into the left and right PCBs.
+  * If you are using the standard modifier keycap sizes, you will also want to add 2u stabs for those keys.
   * If you forget the stabilizer you will need to unsolder all of the switches so as to fit it.
   * Don't forget to trim and lube your stabilizer before fitting if you want to.
 * Place the PCBs onto the switches:

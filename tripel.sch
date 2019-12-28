@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Tripel keyboard"
-Date ""
-Rev "2.2"
+Date "2019-12-26"
+Rev "2.4"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -288,8 +288,6 @@ Connection ~ 5800 4600
 Connection ~ 7700 4600
 Connection ~ 6750 4600
 Wire Wire Line
-	7350 3500 7350 4300
-Wire Wire Line
 	8300 3500 8300 3900
 $Comp
 L promicro:ProMicro_ChipSideDown U1
@@ -563,13 +561,13 @@ Connection ~ 3900 4600
 Connection ~ 2950 4600
 Connection ~ 5450 4300
 Wire Wire Line
-	5450 3500 5450 4300
+	5450 3500 5450 4050
 Wire Wire Line
-	3550 3500 3550 4300
+	3550 3500 3550 4050
 Wire Wire Line
 	4500 3500 4500 4300
 Wire Wire Line
-	4500 4300 4500 5100
+	4500 4300 4500 4850
 Wire Wire Line
 	4850 5400 5800 5400
 Connection ~ 4850 5400
@@ -622,19 +620,19 @@ Wire Wire Line
 	9550 3800 9550 4500
 Connection ~ 8650 3800
 Wire Wire Line
-	4700 1950 4100 1950
+	4700 1950 3750 1950
 Wire Wire Line
-	4100 2050 4700 2050
+	3350 2050 3650 2050
 Wire Wire Line
-	4700 2150 4100 2150
+	4700 2150 3550 2150
 Wire Wire Line
-	4700 1850 4100 1850
+	4700 1850 4350 1850
 Wire Wire Line
-	4100 1850 4100 1650
+	4350 1650 4100 1650
 Wire Wire Line
-	4100 1550 4700 1550
+	4100 1550 4450 1550
 Wire Wire Line
-	4700 1450 4100 1450
+	4700 1450 4550 1450
 Wire Wire Line
 	4700 2250 1150 2250
 Wire Wire Line
@@ -684,7 +682,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 3100 5450 3100
 Wire Wire Line
-	5450 3100 5450 3500
+	5450 3100 5450 3250
 Connection ~ 5450 3500
 Wire Wire Line
 	6100 2250 6400 2250
@@ -811,12 +809,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J3
 U 1 1 5D86F0FA
-P 3900 2050
-F 0 "J3" H 3818 1725 50  0000 C CNN
-F 1 "Right Rows" H 3818 1816 50  0000 C CNN
-F 2 "keyboard:CONNECTOR_3" H 3900 2050 50  0001 C CNN
-F 3 "~" H 3900 2050 50  0001 C CNN
-	1    3900 2050
+P 3150 2050
+F 0 "J3" H 3068 1725 50  0000 C CNN
+F 1 "Right Rows" H 3068 1816 50  0000 C CNN
+F 2 "keyboard:CONNECTOR_3" H 3150 2050 50  0001 C CNN
+F 3 "~" H 3150 2050 50  0001 C CNN
+	1    3150 2050
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -833,11 +831,11 @@ $EndComp
 Wire Wire Line
 	2600 4300 2600 5100
 Wire Wire Line
-	3550 4300 3550 5100
+	3550 4300 3550 4850
 Wire Wire Line
-	5450 4300 5450 5100
+	5450 4300 5450 4850
 Wire Wire Line
-	6400 4300 6400 5100
+	6400 4300 6400 4850
 Wire Wire Line
 	8300 4300 8300 4700
 $Comp
@@ -895,37 +893,37 @@ NoConn ~ 6100 1850
 $Comp
 L keyboard_parts:USB_mini_micro_B J6
 U 1 1 5D8562BE
-P 8450 1150
-F 0 "J6" H 8337 1441 60  0000 C CNN
-F 1 "USB_mini_micro_B" H 8300 1400 60  0001 C CNN
-F 2 "keyboard:USB_Mini-B" H 8400 1150 60  0001 C CNN
-F 3 "" H 8400 1150 60  0000 C CNN
-	1    8450 1150
+P 9900 2650
+F 0 "J6" H 9787 2941 60  0000 C CNN
+F 1 "USB_mini_micro_B" H 9750 2900 60  0001 C CNN
+F 2 "keyboard:USB_Mini-B" H 9850 2650 60  0001 C CNN
+F 3 "" H 9850 2650 60  0000 C CNN
+	1    9900 2650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J7
 U 1 1 5D85727B
-P 9150 1100
-F 0 "J7" H 9230 1092 50  0000 L CNN
-F 1 "Conn_01x04" H 9230 1001 50  0000 L CNN
-F 2 "keyboard:CONNECTOR_4" H 9150 1100 50  0001 C CNN
-F 3 "~" H 9150 1100 50  0001 C CNN
-	1    9150 1100
+P 10600 2600
+F 0 "J7" H 10680 2592 50  0000 L CNN
+F 1 "Conn_01x04" H 10680 2501 50  0000 L CNN
+F 2 "keyboard:CONNECTOR_4" H 10600 2600 50  0001 C CNN
+F 3 "~" H 10600 2600 50  0001 C CNN
+	1    10600 2600
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8600 1500
-NoConn ~ 8600 1300
+NoConn ~ 10050 3000
+NoConn ~ 10050 2800
 Wire Wire Line
-	8600 1000 8950 1000
+	10050 2500 10400 2500
 Wire Wire Line
-	8600 1100 8950 1100
+	10050 2600 10400 2600
 Wire Wire Line
-	8600 1200 8950 1200
+	10050 2700 10400 2700
 Wire Wire Line
-	8600 1400 8950 1400
+	10050 2900 10400 2900
 Wire Wire Line
-	8950 1400 8950 1300
+	10400 2900 10400 2800
 Connection ~ 7700 4300
 $Comp
 L Device:D D5.4
@@ -1087,14 +1085,241 @@ L Connector_Generic:Conn_01x02 J9
 U 1 1 5DD3C066
 P 6650 1550
 F 0 "J9" H 6730 1542 50  0000 L CNN
-F 1 "Conn_01x02" H 6730 1451 50  0000 L CNN
-F 2 "keyboard:PADS_2" H 6650 1550 50  0001 C CNN
+F 1 "Reset" H 6730 1451 50  0000 L CNN
+F 2 "keyboard:RESET" H 6650 1550 50  0001 C CNN
 F 3 "~" H 6650 1550 50  0001 C CNN
 	1    6650 1550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6100 1550 6450 1550
+	6100 1550 6400 1550
 Wire Wire Line
-	6100 1650 6450 1650
+	6100 1650 6300 1650
+$Comp
+L keyboard_parts:KEYSW K2.2_1.5u1
+U 1 1 5E013455
+P 3250 4050
+F 0 "K2.2_1.5u1" H 3200 4050 60  0000 C CNN
+F 1 "KEYSW" H 3250 3950 60  0001 C CNN
+F 2 "keyboard:MX_PCB_150H" H 3250 4050 60  0001 C CNN
+F 3 "" H 3250 4050 60  0000 C CNN
+	1    3250 4050
+	1    0    0    -1  
+$EndComp
+Connection ~ 3550 4050
+Wire Wire Line
+	3550 4050 3550 4300
+Wire Wire Line
+	2950 4300 2950 4050
+Connection ~ 2950 4300
+$Comp
+L keyboard_parts:KEYSW K3.2_1.75u1
+U 1 1 5E019CDD
+P 3250 4850
+F 0 "K3.2_1.75u1" H 3200 4850 60  0000 C CNN
+F 1 "KEYSW" H 3250 4750 60  0001 C CNN
+F 2 "keyboard:MX_PCB_175H" H 3250 4850 60  0001 C CNN
+F 3 "" H 3250 4850 60  0000 C CNN
+	1    3250 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 3550 4850
+Wire Wire Line
+	3550 4850 3550 5100
+Wire Wire Line
+	2950 4850 2950 5100
+Connection ~ 2950 5100
+$Comp
+L keyboard_parts:KEYSW K4.2_1.75u1
+U 1 1 5E02039B
+P 6100 4850
+F 0 "K4.2_1.75u1" H 6050 4850 60  0000 C CNN
+F 1 "KEYSW" H 6100 4750 60  0001 C CNN
+F 2 "keyboard:MX_PCB_175H" H 6100 4850 60  0001 C CNN
+F 3 "" H 6100 4850 60  0000 C CNN
+	1    6100 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 6400 4850
+Wire Wire Line
+	6400 4850 6400 5100
+Wire Wire Line
+	5800 4850 5800 5100
+Connection ~ 5800 5100
+$Comp
+L keyboard_parts:KEYSW K1.4_2u1
+U 1 1 5E0272B0
+P 5150 3250
+F 0 "K1.4_2u1" H 5100 3250 60  0000 C CNN
+F 1 "KEYSW" H 5150 3150 60  0001 C CNN
+F 2 "keyboard:MX" H 5150 3250 60  0001 C CNN
+F 3 "" H 5150 3250 60  0000 C CNN
+	1    5150 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 5450 3250
+Wire Wire Line
+	5450 3250 5450 3500
+Wire Wire Line
+	4850 3250 4850 3500
+Connection ~ 4850 3500
+$Comp
+L keyboard_parts:KEYSW K2.4_1.5u1
+U 1 1 5E02DE5E
+P 5150 4050
+F 0 "K2.4_1.5u1" H 5100 4050 60  0000 C CNN
+F 1 "KEYSW" H 5150 3950 60  0001 C CNN
+F 2 "keyboard:MX_PCB_150H" H 5150 4050 60  0001 C CNN
+F 3 "" H 5150 4050 60  0000 C CNN
+	1    5150 4050
+	1    0    0    -1  
+$EndComp
+Connection ~ 5450 4050
+Wire Wire Line
+	5450 4050 5450 4300
+Wire Wire Line
+	4850 4050 4850 4300
+Connection ~ 4850 4300
+$Comp
+L keyboard_parts:KEYSW K3.3_2.25u1
+U 1 1 5E034CB4
+P 4200 4850
+F 0 "K3.3_2.25u1" H 4150 4850 60  0000 C CNN
+F 1 "KEYSW" H 4200 4750 60  0001 C CNN
+F 2 "keyboard:MX_PCB_225H" H 4200 4850 60  0001 C CNN
+F 3 "" H 4200 4850 60  0000 C CNN
+	1    4200 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 4850
+Wire Wire Line
+	4500 4850 4500 5100
+$Comp
+L keyboard_parts:KEYSW K4.3_2.25u1
+U 1 1 5E0351DC
+P 5150 4850
+F 0 "K4.3_2.25u1" H 5100 4850 60  0000 C CNN
+F 1 "KEYSW" H 5150 4750 60  0001 C CNN
+F 2 "keyboard:MX_PCB_225H" H 5150 4850 60  0001 C CNN
+F 3 "" H 5150 4850 60  0000 C CNN
+	1    5150 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 5450 4850
+Wire Wire Line
+	5450 4850 5450 5100
+Wire Wire Line
+	4850 4850 4850 5100
+Connection ~ 4850 5100
+Wire Wire Line
+	7350 3500 7350 4300
+Wire Wire Line
+	3900 4850 3900 5100
+Connection ~ 3900 5100
+$Comp
+L Connector_Generic:Conn_01x02 J11
+U 1 1 5E21853E
+P 7100 950
+F 0 "J11" H 7180 942 50  0000 L CNN
+F 1 "Left Reset" H 7180 851 50  0000 L CNN
+F 2 "keyboard:CONNECTOR_2" H 7100 950 50  0001 C CNN
+F 3 "~" H 7100 950 50  0001 C CNN
+	1    7100 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J10
+U 1 1 5E21ABBE
+P 5650 950
+F 0 "J10" H 5730 942 50  0000 L CNN
+F 1 "Right Reset" H 5730 851 50  0000 L CNN
+F 2 "keyboard:CONNECTOR_2" H 5650 950 50  0001 C CNN
+F 3 "~" H 5650 950 50  0001 C CNN
+	1    5650 950 
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 950  6400 950 
+Wire Wire Line
+	6900 1050 6300 1050
+Wire Wire Line
+	6400 1550 6400 950 
+Connection ~ 6400 1550
+Wire Wire Line
+	6400 1550 6450 1550
+Connection ~ 6400 950 
+Wire Wire Line
+	6400 950  6900 950 
+Wire Wire Line
+	6300 1050 6300 1650
+Connection ~ 6300 1050
+Wire Wire Line
+	6300 1050 5850 1050
+Connection ~ 6300 1650
+Wire Wire Line
+	6300 1650 6450 1650
+$Comp
+L Connector_Generic:Conn_01x03 J12
+U 1 1 5E2799C7
+P 3150 1550
+F 0 "J12" H 3068 1225 50  0000 C CNN
+F 1 "Far Left Rows" H 3068 1316 50  0000 C CNN
+F 2 "keyboard:CONNECTOR_3" H 3150 1550 50  0001 C CNN
+F 3 "~" H 3150 1550 50  0001 C CNN
+	1    3150 1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3350 1450 3750 1450
+Wire Wire Line
+	3750 1450 3750 1950
+Connection ~ 3750 1950
+Wire Wire Line
+	3750 1950 3350 1950
+Wire Wire Line
+	3350 1550 3650 1550
+Wire Wire Line
+	3650 1550 3650 2050
+Connection ~ 3650 2050
+Wire Wire Line
+	3650 2050 4700 2050
+Wire Wire Line
+	3350 1650 3550 1650
+Wire Wire Line
+	3550 1650 3550 2150
+Connection ~ 3550 2150
+Wire Wire Line
+	3550 2150 3350 2150
+$Comp
+L Connector_Generic:Conn_01x03 J13
+U 1 1 5E2B61E1
+P 3900 950
+F 0 "J13" H 3818 625 50  0000 C CNN
+F 1 "Far Left Rows" H 3818 716 50  0000 C CNN
+F 2 "keyboard:CONNECTOR_3" H 3900 950 50  0001 C CNN
+F 3 "~" H 3900 950 50  0001 C CNN
+	1    3900 950 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4100 850  4550 850 
+Wire Wire Line
+	4550 850  4550 1450
+Connection ~ 4550 1450
+Wire Wire Line
+	4550 1450 4100 1450
+Wire Wire Line
+	4100 950  4450 950 
+Wire Wire Line
+	4450 950  4450 1550
+Connection ~ 4450 1550
+Wire Wire Line
+	4450 1550 4700 1550
+Wire Wire Line
+	4100 1050 4350 1050
+Wire Wire Line
+	4350 1050 4350 1650
+Wire Wire Line
+	4350 1850 4350 1650
+Connection ~ 4350 1650
 $EndSCHEMATC
