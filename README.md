@@ -1,8 +1,10 @@
-# Tripel - 60% keyboard PCB
+# Tripel - Ortholinear 60% keyboard PCB
 
-Tripel is a 15x4+1x5 key ortholinear keyboard PCB.
+Tripel is a 15 column ortholinear keyboard PCB.
 
-The goal of this project is to build a pro-micro powered ortholinear PCB that fits in a standard 60% tray mount case but built from sub-100x100mm PCB boards.
+The goal of this project is to build an all throughhole component, pro-micro powered ortholinear PCB that fits in a standard 60% tray mount case but built from sub-100x100mm PCB boards.
+
+Inspired by the modular PCB projects of [40Percent.club](http://www.40percent.club/) like the [Nori](http://www.40percent.club/2018/10/nori.html).
 
 ![PCB render](images/pcb-render.png)
 
@@ -10,13 +12,14 @@ The goal of this project is to build a pro-micro powered ortholinear PCB that fi
 * Built from 3 of the same PCB.
 * 7u spacebar bottom row.
 
-![PCB render](images/layout.png)
-![PCB render](images/3pcbs.jpg)
+![Layout options](images/layout.png)
+![PCBs layed out](images/3pcbs.jpg)
+![Built keyboard](images/tofu.jpg)
 
 # Bill of Materials (BOM)
 
 * 3 PCBs.
-* A suitable 60% ortholinear keyboard plate (eg. XD75 plate).
+* A suitable 60% ortholinear keyboard plate (eg. [XD75 plate](https://kprepublic.com/collections/xd75/products/stainless-steel-plate-for-xd75re-60-custom-keyboard-mechanical-keyboard-plate-support-xd75re)).
 * 65 MX compatible switches.
 * 65 1n4148 diodes.
 * Pro Micro controller (or compatible alternative).
@@ -68,12 +71,22 @@ When uploading the gerber zip files, use the default PCB settings.
 * Cut your USB cable to length and solder the wires to the pads for the USB connector.
  * Wire colours may vary, but usually: Red = VCC; black = GND; white = D-; green = D+
 
+![Connecting the PCBs together](images/connecting-pcbs.jpg)
+
 # Firmware
 
 Build and flash the Pro Micro with QMK firmware, see the [QMK documentation](http://qmk.fm/) on how to do this.
 
-The required pinout for the firmware is shown in the following image:
+The required pinout for the firmware is shown in [this KLE layout](http://www.keyboard-layout-editor.com/#/gists/6fe5d6cc536d3c9c028186f25ce0c42f):
 
 ![PCB render](images/pins.png)
 
-A preconfigured firmware is not yet available in the QMK repo.
+A preconfigured firmware is not yet available in the QMK repo but can be [found here in my fork](https://github.com/peej/qmk_firmware/tree/master/keyboards/tripel).
+
+# Differences to the XD75
+
+The main difference to the XD75 is the alternative layout options.
+
+* Supports PCB mount stabilizers for a 7u (or 2u) "spacebar"
+* Supports PCB mount stabilizers for non-1u layout, 2u "backspace", 2.75u "enter" and "right shift" keys.
+* The Tripel does not support the full-grid layout of the XD75 as there are not enough pins on the Pro Micro
